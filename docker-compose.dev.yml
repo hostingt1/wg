@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  wg:
+    image: wg
+    command: npm run serve
+    volumes:
+      - ./src/:/app/
+    # environment: 
+    #   - PASSWORD=p
